@@ -22,6 +22,14 @@ vim.opt.smartindent = true
 vim.opt.smarttab = true
 
 
+-- Set PowerShell as the default shell for the terminal
+vim.opt.shell = 'powershell.exe'
+vim.opt.shellcmdflag = '-NoExit -Command'  -- Adjusts the shell startup to stay open
+vim.opt.shellquote = ''  -- This is to avoid issues with quoting
+vim.opt.shellxquote = '' -- This removes extra quoting
+
+-- Optional: Set PowerShell as the default shell environment
+vim.env.SHELL = 'powershell.exe'
 
 
 vim.o.wrap = true
